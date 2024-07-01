@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { ReactNode } from "react";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
@@ -24,21 +23,23 @@ const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
-      <Head>
-        <html lang="en" />
-        <meta property="og:title" content="Link Preview" />
-        <meta property="og:description" content="Link preview page" />
-        <meta
-          property="og:url"
-          content="https://link-preview-eta.vercel.app/"
-        />
-        <meta
-          property="og:image"
-          content="https://link-preview-eta.vercel.app/assets/header.png"
-        />
-        <meta property="og:type" content="website" />
-      </Head>
-      <body className={inter.className}>{children}</body>
+      <html lang="en">
+        <head>
+          <meta property="og:title" content="Link Preview" />
+          <meta property="og:description" content="Link preview page" />
+          <meta
+            property="og:url"
+            content="https://link-preview-eta.vercel.app/"
+          />
+          <meta
+            property="og:image"
+            content="https://link-preview-eta.vercel.app/assets/header.png"
+          />
+          <meta property="og:type" content="website" />
+        </head>
+
+        <body className={inter.className}>{children}</body>
+      </html>
     </>
   );
 }
