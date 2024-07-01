@@ -1,7 +1,5 @@
 import { ReactNode } from "react";
 import { Inter } from "next/font/google";
-import type { Metadata } from "next";
-import "./globals.css";
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -26,7 +24,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <html lang="en">
         <head>
           <meta property="og:title" content="Link Preview" />
-          <meta property="og:description" content="Link preview page" />
+          <meta property="og:description" content=" Link preview page" />
           <meta
             property="og:url"
             content="https://link-preview-eta.vercel.app/"
