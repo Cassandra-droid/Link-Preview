@@ -1,4 +1,3 @@
-"use client";
 import ShareButton from "./ShareButton/page";
 const HomePage: React.FC = () => {
   return (
