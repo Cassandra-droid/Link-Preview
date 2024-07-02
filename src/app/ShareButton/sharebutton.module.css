@@ -1,0 +1,80 @@
+.sharebuttoncontainer {
+    position: relative;
+    display: inline-block;
+}
+
+.shareiconbutton {
+    background-color: rgb(205, 200, 200);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+.sharebuttoncontainer:hover .sharemenu {
+    display: block;
+}
+
+.sharemenu {
+    display: none;
+    position: absolute;
+    top: 40px;
+
+    left: 10px;
+
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    z-index: 1;
+    min-width: 200px;
+}
+
+.sharemenu button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.sharemenu button i {
+    margin-right: 10px;
+}
+
+.sharemenu button:hover {
+    background-color: #f1f1f1;
+}
+
+.emailbutton i {
+    color: #d44638;
+}
+
+.twitterbutton i {
+    color: #1da1f2;
+}
+
+.whatsappbutton i {
+    color: #25d366;
+}
+
+.copybutton i {
+    color: #4caf50;
+}
+
+.copiedText {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+
+    color: black;
+    padding: 5px;
+    border-radius: 3px;
+
+}

@@ -1,4 +1,5 @@
 import ShareButton from "./ShareButton/page";
+import "@fortawesome/fontawesome-free";
 const HomePage: React.FC = () => {
   return (
     <div>
